@@ -1,0 +1,154 @@
+ 
+ 
+ /* navbar */
+ .btn {
+    background-color: #e16fe7;
+    border: none;
+  }
+
+  
+
+  /* jumbotron */
+
+  .nav-link:hover {
+        color: #1b1111; /* Ubah warna teks saat hover */
+        background-color: #c0c0c0; /* Ubah warna latar belakang saat hover */
+    }
+
+  /* about */
+  #gambar1 {
+    border: 5px solid #f7b808; /* Warna pinggir */
+    border-radius: 0; /* Reset radius */
+    border-bottom-left-radius: 3.5rem; /* Rounded top-left */
+    border-top-right-radius: 3.5rem; /* Rounded bottom-right */
+}
+
+#gambar2 {
+    border: 5px solid #f7b808; /* Warna pinggir */
+    border-radius: 0; /* Reset radius */
+    border-top-left-radius: 3.5rem; /* Rounded top-left */
+    border-bottom-right-radius: 3.5rem; /* Rounded bottom-right */
+}
+
+
+  /* service */
+  .custom-rounded-bottom {
+    border-bottom-left-radius: 80px;
+    border-bottom-right-radius: 80px;
+  }
+  .small-img {
+    width: 100px; /* Atur lebar gambar menjadi 100 piksel */
+    height: auto; /* Menjaga rasio aspek gambar */
+  }
+
+  .colored-box {
+    background-color: #a82fcd; /* Light grey background, change as needed */
+    padding: 20px;
+    border-radius: 15px; /* Rounded corners */
+    box-shadow: 0 20px 25px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition for hover effect */
+  }
+  .colored-box:hover {
+    transform: translateY(-5px); /* Lift effect on hover */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); /* Enhanced shadow on hover */
+  }
+
+  h2.custom-header {
+    margin: 0; /* Hapus margin default */
+    padding: 0.5rem 0; /* Tambahkan padding atas bawah jika diperlukan */
+    color: #da82fc; /* Warna teks */
+    border-bottom: 2px solid #f7b808; /* Border kuning */
+    display: inline-block; /* Element hanya sebesar konten di dalamnya */
+    text-align: center; /* Teks terpusat */
+  }
+  /* Centering the h2 element */
+  .text-center {
+    text-align: center; /* Memastikan teks terpusat */
+  }
+
+  /* category */
+  .small-category-img {
+    width: 80px; /* Menentukan lebar gambar */
+    height: 80px; /* Menentukan tinggi gambar */
+    border-radius: 10px; /* Pembulatan sudut */
+    object-fit: cover; /* Memastikan gambar menutupi area tanpa distorsi */
+  }
+  .category-box {
+    background-color: #a82fcd; /* White background */
+    padding: 20px;
+    border-radius: 50%; /* Rounded corners */
+    box-shadow: 20px 40x 50px rgba(0, 0, 0, 0.15); /* Subtle shadow */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition for hover effects */
+    display: flex;
+    justify-content: center; /* Centering image inside the box */
+    align-items: center;
+    height: 200px; /* Fixed height for uniformity */
+  }
+  .category-box:hover {
+    transform: translateY(-5px); /* Lift effect on hover */
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.25); /* Enhanced shadow on hover */
+  }
+
+  h5 {
+    color: white;
+    text-align: center; /* Center align the title */
+    margin-top: 10px; /* Space between image box and title */
+  }
+
+  .kategori-buku {
+    color: #a82fcd; /* Warna teks ungu */
+    border-bottom: 3px solid yellow; /* Garis bawah berwarna kuning */
+    display: inline-block; /* Batasi lebar elemen sesuai konten */
+    padding-bottom: 5px; /* Jarak antara teks dan garis bawah */
+    margin-top: 20px; /* Jarak dari atas halaman */
+    margin-bottom: 20px; /* Margin bawah untuk spacing */
+    text-align: center; /* Pusatkan teks secara horizontal */
+  }
+
+  /* contact */
+  .text-purple {
+    color: #7f4ca5; /* Warna teks ungu */
+  }
+
+  .contact-item {
+    margin-top: 15px; /* Jarak antara item */
+  }
+  .contact-icon {
+    width: 40px; /* Ukuran ikon */
+    vertical-align: middle; /* Menyelaraskan ikon dengan teks */
+    margin-right: 10px; /* Jarak antara ikon dan teks */
+  }
+
+  .map-img {
+    padding-left: 150px; /* Padding kiri untuk gambar */
+    width: 70%; /* Lebar gambar */
+    height: auto; /* Tinggi gambar otomatis */
+  }
+
+  /* footer */
+  footer {
+    background-color: #7f4ca5; /* Warna background untuk footer */
+  }
+  .footer-logo {
+    display: flex;
+    align-items: center;
+    padding: 20px 0; /* Padding untuk memberi ruang atas dan bawah */
+  }
+  .footer-logo img {
+    width: 100px; /* Ukuran logo */
+    margin-right: 20px; /* Jarak antara logo dan teks */
+  }
+  .footer-column h5 {
+    margin-top: 20px; /* Menghilangkan margin atas default */
+  }
+  .footer-column ul {
+    padding-right: 10px; /* Menghilangkan padding kiri default pada list */
+    list-style: none; /* Menghilangkan bullet points */
+  }
+  .footer-column a {
+    text-decoration: none; /* Menghilangkan underline pada link */
+    color: #fff; /* Warna link putih */
+  }
+  .footer-column a:hover {
+    text-decoration: underline; /* Menambahkan underline saat hover */
+  }
