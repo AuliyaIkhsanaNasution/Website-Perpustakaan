@@ -75,7 +75,7 @@
 
           <div class="col-md-6">
             <label for="stok_buku" class="form-label">Stok Buku</label>
-            <input type="number" class="form-control border border-primary-subtle border-2" id="stok_buku" name="stok_buku" value="<?= $data['buku']['stok_buku'] ?>" min="1">
+            <input type="number" class="form-control border border-primary-subtle border-2" id="stok_buku" name="stok_buku" value="<?= $data['buku']['stok_buku'] ?>">
           </div>
 
           <div class="col-md-6">

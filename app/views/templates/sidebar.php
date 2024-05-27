@@ -92,7 +92,7 @@
             </a>
           </li>
           <li class="nav-item">
-            <a href="<?= BASEURL; ?>Admin" class="nav-link">
+            <a href="<?= BASEURL; ?>Denda" class="nav-link">
               <i class="nav-icon fas fa-download "></i>
               <p>
                 Data Denda

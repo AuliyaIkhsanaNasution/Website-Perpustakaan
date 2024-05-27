@@ -54,11 +54,6 @@ class Peminjaman_model
 
     public function hapusDataPeminjaman($id)
     {
-        // Ambil data peminjaman berdasarkan id
-        $peminjaman = $this->getPeminjamanById($id);
-        
-        // Tambahkan kembali jumlah buku ke stok sebelum menghapus data peminjaman
-        $this->updateStokBuku($peminjaman['isbn'], $peminjaman['banyak_buku']);
 
         // Hapus data peminjaman
         $query = 'DELETE FROM ' . $this->table . ' WHERE id_peminjaman = :id';

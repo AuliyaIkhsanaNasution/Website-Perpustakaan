@@ -80,7 +80,7 @@
                                     <!-- Tombol Kembalikan -->
                                     <a href="<?= BASEURL; ?>/Peminjaman/kembalikan/<?= $peminjaman['id_peminjaman']; ?>" class="btn btn-success kembalikan-btn " onclick="return confirm('Apakah buku sudah dikembalikan?');">Kembalikan</a>
                                     <!-- Tombol Denda -->
-                                    <a href="<?= BASEURL; ?>/Peminjaman/denda/<?= $peminjaman['id_peminjaman']; ?>" class="btn btn-info">Denda</a>
+                                    <a href="<?= BASEURL; ?>/Denda/tambah/<?= $peminjaman['id_peminjaman']; ?>" class="btn btn-info">Denda</a>
                                 </td>
 
 
