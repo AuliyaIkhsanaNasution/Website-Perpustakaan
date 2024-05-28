@@ -22,10 +22,14 @@
         $this->verifySession(); // Panggil fungsi verifikasi sesi di setiap metode yang memerlukan otorisasi
 
         $data['judul']='Dashboard Perpustakaan Politeknik Negeri Medan';
+        $data['total_anggota'] =$this->model('Dashboard_model')->countAnggota();
+        $data['total_buku'] = $this->model('Dashboard_model')->countBuku();
+        $data['total_peminjaman'] = $this->model('Dashboard_model')->countPeminjaman();
+        $data['total_denda'] = $this->model('Dashboard_model')->sumDenda();
         $this->view('templates/header',$data);
         $this->view('templates/sidebar');
         $this->view('templates/topbar');
-        $this->view('admin/index');
+        $this->view('admin/index',$data);
         $this->view('templates/footer');
     }
 

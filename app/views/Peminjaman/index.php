@@ -87,8 +87,10 @@
 
                             </tr>
                         <?php endforeach; ?>
-
     </table>
+    <a href="<?= BASEURL; ?>/Peminjaman/laporan" class="btn btn-success">Lihat Laporan</a>
+
+
     </div>
       </div><!-- /.container-fluid -->
     </div>

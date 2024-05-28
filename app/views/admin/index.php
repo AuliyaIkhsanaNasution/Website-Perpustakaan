@@ -27,14 +27,16 @@
             <!-- small box -->
             <div class="small-box "style="background-color:#7f4ca5">
               <div class="inner">
-                <h3>150</h3>
+              <?php foreach ($data['total_anggota'] as $total_anggota): ?>
+                  <h3><?= $total_anggota['total_anggota']; ?></h3>
+              <?php endforeach; ?>
+
 
                 <p>Anggota</p>
               </div>
               <div class="icon">
                 <i class="ion ion-person"></i>
               </div>
-              <a href="#" class="small-box-footer">Info Lebih Lanjut <i class="fas fa-arrow-circle-right"></i></a>
             </div>
           </div>
           <!-- ./col -->
@@ -42,14 +44,15 @@
             <!-- small box -->
             <div class="small-box " style="background-color:#b57edc">
               <div class="inner">
-                <h3>53<sup style="font-size: 20px">%</sup></h3>
+              <?php foreach ($data['total_buku'] as $total_buku): ?>
+                  <h3><?= $total_buku['total_buku']; ?></h3>
+              <?php endforeach; ?>
 
                 <p>Buku</p>
               </div>
               <div class="icon">
                 <i class="ion ion-document-text"></i>
               </div>
-              <a href="#" class="small-box-footer">Info Lebih Lanjut <i class="fas fa-arrow-circle-right"></i></a>
             </div>
           </div>
           <!-- ./col -->
@@ -57,14 +60,15 @@
             <!-- small box -->
             <div class="small-box"style="background-color:#dbb6ee">
               <div class="inner">
-                <h3>44</h3>
+              <?php foreach ($data['total_peminjaman'] as $total_peminjaman): ?>
+                  <h3><?= $total_peminjaman['total_peminjaman']; ?></h3>
+              <?php endforeach; ?>
 
                 <p>Peminjaman</p>
               </div>
               <div class="icon">
                 <i class="ion ion-arrow-up-c"></i>
               </div>
-              <a href="#" class="small-box-footer">Info Lebih Lanjut <i class="fas fa-arrow-circle-right"></i></a>
             </div>
           </div>
           <!-- ./col -->
@@ -72,14 +76,16 @@
             <!-- small box -->
             <div class="small-box " style="background-color:#fff0ff">
               <div class="inner">
-                <h3>65</h3>
+              <?php foreach ($data['total_denda'] as $total_denda): ?>
+                  <h3><?= 'Rp' . number_format($total_denda['total_denda'], 0, ',', '.'); ?></h3>
+              <?php endforeach; ?>
 
-                <p>Pengembalian</p>
+
+                <p>Total Uang Denda</p>
               </div>
               <div class="icon">
-                <i class="ion ion-archive"></i>
+                <i class="ion ion-cash"></i>
               </div>
-              <a href="#" class="small-box-footer">Info Lebih Lanjut <i class="fas fa-arrow-circle-right"></i></a>
             </div>
           </div>
           <!-- ./col -->

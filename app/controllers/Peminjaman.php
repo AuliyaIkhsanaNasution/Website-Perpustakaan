@@ -96,6 +96,21 @@ public function update()
     }
 }
 
+public function laporan() {
+    $bulanIni = date('F');
+    $tahunIni = date('Y');
+    $data['title'] = 'Laporan Data Peminjaman Perpustakaan ';
+    $data['peminjaman'] = $this->model('Peminjaman_model')->getAllPeminjaman();
+    $data['periode'] = 'Periode: ' . $bulanIni . ' ' . $tahunIni;
+    // Ambil nama user dari sesi 'user'
+    $data['username'] = $_SESSION['username']; // Ganti 'user' dengan nama sesi yang sesuai
+    $data['location'] = 'Medan';
+    $data['date'] = date('d F Y');
+    $this->view('peminjaman/laporan', $data);
+}
+
+
+
 }
 
 ?>
