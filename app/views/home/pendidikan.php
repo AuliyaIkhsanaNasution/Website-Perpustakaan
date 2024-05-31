@@ -5,7 +5,7 @@
       <!-- Menambahkan judul Novel/Fiksi di atas kotak -->
       <div class="row justify-content-between align-items-center" style="margin-bottom: 20px">
         <div class="col-auto">
-        <a href="<?= BASEURL; ?>/Home/Pendidikan" style="text-decoration: none;"><h2 style="color: #4b1c71;"><b>Agama</b></h2></a>
+        <a href="<?= BASEURL; ?>/Home/Pendidikan" style="text-decoration: none;"><h2 style="color: #4b1c71;"><b>Pendidikan</b></h2></a>
         </div>
         <div class="col-auto">
         <form action="<?= BASEURL; ?>/Home/caripendidikan" method="post">
